@@ -1,0 +1,63 @@
+/* 容器 css */
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1226px;
+    height: 460px;
+}
+/* 图片定位 css */
+.container > ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container > ul > li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.container > ul > li > img {
+    width: 100%;
+    height: 100%;
+}
+/* 左右切换按钮定位 css */
+.container a {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 60px;
+    background-color: black;
+    text-align: center;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 60px;
+}
+.container a:first-of-type {
+    left: 0;
+}
+.container a:last-of-type {
+    right: 0;
+}
+/* 小圆点定位 css */
+.container .circle {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 15px;
+}
+.container .circle .item {
+    width: 15px;
+    height: 15px;
+    border: 1px solid#FFFFFF;
+    border-radius: 50%;
+}
